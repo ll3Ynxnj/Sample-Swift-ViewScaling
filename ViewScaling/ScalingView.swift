@@ -21,6 +21,8 @@ class ScalingView: UIView {
   }
   
   override func layoutSubviews() {
+    super.layoutSubviews()
+    
     subview.backgroundColor = .white
     let subviewSize = 100
     subview.frame.size = CGSize(width: subviewSize, height: subviewSize)
