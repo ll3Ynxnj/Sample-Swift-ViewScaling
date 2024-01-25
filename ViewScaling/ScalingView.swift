@@ -14,15 +14,14 @@ class ScalingView: UIView {
     subview = UIView()
     super.init(frame: frame)
     addSubview(subview)
+    self.scaleSubview()
   }
   
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
   
-  override func layoutSubviews() {
-    super.layoutSubviews()
-    
+  func scaleSubview() {
     subview.backgroundColor = .white
     let subviewSize = 100
     subview.frame.size = CGSize(width: subviewSize, height: subviewSize)
