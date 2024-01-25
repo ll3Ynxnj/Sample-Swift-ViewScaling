@@ -13,9 +13,6 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     self.view.backgroundColor = .gray
-  }
-
-  override func viewWillAppear(_ animated: Bool) {
     let scalingView = ScalingView(frame: self.view.bounds)
     self.view.addSubview(scalingView)
   }
